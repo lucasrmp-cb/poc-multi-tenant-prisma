@@ -1,13 +1,11 @@
 import { prisma } from "@repo/database";
 
-export const dynamic = "force-dynamic";
-
 export default async function IndexPage() {
   const users = await prisma.user.findMany();
 
   return (
     <div>
-      <h1>US</h1>
+      <h1>UK</h1>
       <pre>{JSON.stringify(users, null, 2)}</pre>
     </div>
   );

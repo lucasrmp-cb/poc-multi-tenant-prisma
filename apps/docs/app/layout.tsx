@@ -1,6 +1,6 @@
 import { setupTenant } from "@repo/database";
 
-setupTenant("US");
+setupTenant("UK");
 
 export default function RootLayout({
   children,

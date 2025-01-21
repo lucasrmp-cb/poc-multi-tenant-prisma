@@ -3,10 +3,25 @@ import { prisma } from "./client";
 import type { User } from "@prisma/client";
 
 const DEFAULT_USERS = [
-  // Add your own user to pre-populate the database with
   {
     name: "Tim Apple",
     email: "tim@apple.com",
+    tenantId: "US",
+  },
+  {
+    name: "John",
+    email: "john@apple.com",
+    tenantId: "US",
+  },
+  {
+    name: "Elizabeth",
+    email: "beth@apple.com",
+    tenantId: "UK",
+  },
+  {
+    name: "Doe",
+    email: "doe@apple.com",
+    tenantId: "UK",
   },
 ] as Array<Partial<User>>;
 
